@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="script/style/style.css">
+</head>
+    <style>
+        #body{
+            padding: 0;
+            margin: 0;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+        }
+        strong{
+            position: relative;
+            font-size: 25px;
+        }
+        #f1{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: url(متاجر/شارع_1.jpg);
+            background-position: 50%;
+            background-size:  100% 100%;
+        }
+        #f2{
+            position: relative;
+        }
+        #f3{
+            position: relative;
+            background-color: aqua;
+        }
+        #box{
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100px;
+    width: 80%;
+    font-size: 8px;
+    color: #fff;
+    display: none;
+    background-color: black;
+}
+    </style>
+</head>
+<body id="body">
+    <div id="f1">
+        <div id="f2">
+            <img style="width: 100%;" src="img/laz/5.png" alt="">
+            <fieldset dir="rtl" id="f3"><main></main><br><strong>يخرج لاز من المنزل</strong></fieldset>
+        </div>
+        <button onclick="f6()">التالي</button>
+    </div>
+    <script>
+        function f1() {
+        document.getElementById('body').innerHTML = `
+        <div id="f1">
+        <div id="f2">
+            <img style="width: 100%;" src="img/laz/5.png" alt="">
+            <fieldset dir="rtl" id="f3"><main>لاز</main><br><strong>من اين ضهرت لي هاذه الفتاه على ايه حال بما ان المنزل ملي بالماء</strong></fieldset>
+        </div>
+        <button onclick="f2()">التالي</button>
+        </div>
+        `
+        }
+        function f2() {
+        document.getElementById('body').innerHTML = `
+        <div id="f1">
+        <div id="f2">
+            <img style="width: 100%;" src="img/laz/5.png" alt="">
+            <fieldset dir="rtl" id="f3">لاز<main></main><br><strong>فلا مانع من تربية بعض من السمك</strong></fieldset>
+        </div>
+        <button onclick="f3()">التالي</button>
+        </div>
+        `
+        }
+        function f3() {
+            document.getElementById('body').innerHTML = `
+        <div id="f1">
+        <div id="f2">
+            <img style="width: 100%;" src="img/laz/5.png" alt="">
+            <fieldset dir="rtl" id="f3"><main></main><br><strong>هدف لاز في الوقت الحالي هو البحث على متجر موثوق به </strong></fieldset>
+        </div>
+        <button onclick="f4()">التالي</button>
+        </div>
+        `
+        }
+        function f3() {
+            document.getElementById('body').innerHTML = `
+        <div id="f1">
+        <div id="f2">
+            <img style="width: 100%;" src="img/laz/5.png" alt="">
+            <fieldset dir="rtl" id="f3"><main></main><br><strong>هدف لاز في الوقت الحالي هو البحث على متجر موثوق به </strong></fieldset>
+        </div>
+        <button onclick="f4()">التالي</button>
+        </div>
+        `
+        }
+        function f4() {
+            document.getElementById('body').innerHTML = `
+        <div id="f1" style="background: url(متاجر/سمك/OIG4.jpg);background-size:  100% 100%;">
+        <div id="f2">
+            <img style="width: 100%;" src="img/laz/5.png" alt="">
+            <fieldset dir="rtl" id="f3"><main></main><br><strong>بعد التعمق في السوق وجد بعض المتجار</strong></fieldset>
+        </div>
+        <button onclick="f5()">التالي</button>
+        </div>
+        `
+        }
+        function f5() {
+            document.getElementById('body').innerHTML = `
+        <div id="f1" style="background: url(متاجر/سمك/OIG4.jpg);background-size:  100% 100%;">
+        <div id="f2">
+            <img style="width: 100%;" src="img/laz/5.png" alt="">
+            <fieldset dir="rtl" id="f3"><main></main><br><strong>حسنا بماذ ابدا</strong></fieldset>
+        </div>
+        <button onclick="f6()">التالي</button>
+        </div>
+        `
+        }
+        function f6() {
+            document.getElementById('body').innerHTML = `
+        <div id="f1" style="background: url(../pakg/متاجر/سم/OIG4.jpg)">
+        <button onclick="f5_5()">المتجر في اليمين</button>
+        <button onclick="f7_100()">المتجر المنزل في الزاويه</button>
+        </div>
+        `
+        }
+        function f7_100() {
+            document.getElementById('body').innerHTML = `
+        <div id="f1" style="background: url(متاجر/سمك/محل.jpg);background-size:  100% 100%;">
+        <div id="f2">
+            <img style="width: 100%;" src="img/laz/5.png" alt="">
+            <fieldset dir="rtl" style="top: 100%;" id="f3">لاز<main></main><br><strong>حسنا سا أبدا بهذا المتجر </strong></fieldset>
+        </div>
+        <button onclick="f7_101()">التالي</button>
+        </div>
+        `
+        }
+        function f7_101() {
+            document.getElementById('body').innerHTML = `
+        <div id="f1" style="background: url(متاجر/سمك/محل.jpg);background-size:  100% 100%;">
+        <div id="f2">
+            <img style="width: 100%;" src="img/laz/5.png" alt="">
+            <fieldset dir="rtl" style="top: 100%;" id="f3">لاز<main></main><br><strong>حسنا سا ابدا بهذا المتجر </strong></fieldset>
+        </div>
+        <button onclick="f7_102()">التالي</button>
+        </div>
+        `
+        }
+        function f7_102() {
+            document.getElementById('body').innerHTML = `
+        <div id="f1" style="background: url(متاجر/سمك/محل.jpg);background-size:  100% 100%;">
+        <div id="f2">
+            <img style="width: 100%;" src="img/laz/5.png" alt="">
+            <fieldset dir="rtl" style="top: 100%;" id="f3">لاز<main></main><br><strong>ggg</strong></fieldset>
+        </div>
+        <button onclick="f7_103">التالي</button>
+        </div>
+        `
+        }
+        function f8() {
+            document.getElementById('body').innerHTML = `
+            <div id="f1">
+            <div id="f2">
+                <img style="width: 100%;" src="img/laz/5.png" alt="">
+                <fieldset dir="rtl" id="f3"><main></main><br><strong>يذهب لاز ليشتري بعض أدوات الصيد</strong>
+            <ul>
+                <li>سناره</li>
+                <li>طعم</li>
+                <li>صندوق</li>
+            </ul>    
+        </fieldset>
+        </div>
+        <button onclick="f5()">التالي</button>
+        </div>
+        `
+        }
+        function f5_5() {
+            document.getElementById('body').innerHTML = `
+            <div id="f1">
+            <div id="f2">
+                <img style="width: 100%;" src="img/laz/5.png" alt="">
+                <fieldset dir="rtl" id="f3"><main>لاز</main><br><strong>حسنا هاذا اكثر من كافي الان ساذهب للصيد</strong></fieldset>
+        </div>
+        <button onclick="f6_5()">التالي</button>
+        </div>
+        `
+        }
+        function f5_6(){
+            alert("خطاء غير متوقع")
+            location.href = 'ch3.html'
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="script/style/style.css">
+</head>
+    <style>
+        #body{
+            padding: 0;
+            margin: 0;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+        }
+        strong{
+            position: relative;
+            font-size: 20px;
+        }
+        #f1{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: url(erorr/f1.jpg);
+            background-position: 50%;
+            background-size:  100% 100%;
+        }
+        #str{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: url(erorr/f2.jpg);
+            background-position: 50%;
+            background-size:  100% 100%;
+        }
+        #f2{
+            position: relative;
+        }
+        #f3{
+            position: relative;
+            background: url(erorr/glitch.gif);
+        }
+        #box{
+            position: relative;
+            top: 0;
+            left: 0;
+            height: 100px;
+            width: 80%;
+            font-size: 8px;
+            color: #fff;
+            display: none;
+            background-color: black;
+        }
+    </style>
+</head>
+<body id="body">
+    <div id="f1">
+        <div id="f2">
+            <img style="width: 100%;" src="img/OIG3.MsaCiinBk2k7x-removebg-preview.png" alt="">
+            <fieldset dir="rtl" id="f3"><main></main><br><strong style="color: #fff;">مرتبكًه قليلاً من الصوت الغريب، تبدأ بالمشي في اتجاهه بحذر </strong></fieldset>
+        </div>
+        <button onclick="f4()">التالي</button>
+    </div>
+    <script>
+        console.group()
+
+        function f1() {
+            document.getElementById('f1').innerHTML = `
+        <div id="f2">
+            <img style="width: 100%;" src="img/OIG3.MsaCiinBk2k7x-removebg-preview.png" alt="">
+            <fieldset dir="rtl" id="f3"><main></main><br><strong style="color: #fff;">تنظر إلى الكمبيوتر المحمول بارتباك</strong></fieldset>
+        </div>
+        <button onclick="f2()">التالي</button>
+            `
+        }
+        function f2() {
+            document.getElementById('f1').innerHTML = `
+        <div id="f2">
+            <img style="width: 100%;" src="img/OIG3.MsaCiinBk2k7x-removebg-preview.png" alt="">
+            <fieldset dir="rtl" id="f3"><main></main><br><strong style="color: #fff;">قترب منه وتفحصه عن كثب</strong></fieldset>
+        </div>
+        <button onclick="f3()">التالي</button>
+            `
+        }
+        function f3() {
+            document.getElementById('f1').innerHTML = `
+        <div id="f2">
+            <img style="width: 100%;" src="img/OIG3.MsaCiinBk2k7x-removebg-preview.png" alt="">
+            <fieldset dir="rtl" id="f3"><main></main><br><strong style="color: #fff;">تضغط على زر"التشغيل" وينتظر لمعرفة ما إذا حدث أي شيء</strong></fieldset>
+        </div>
+        <button onclick="f4()">التالي</button>
+            `
+        }
+        function f4() {
+            document.getElementById('f1').innerHTML = `
+            <div id="str">
+        <div id="f2">
+            <img style="width: 100%;" src="img/OIG3.MsaCiinBk2k7x-removebg-preview.png" alt="">
+            <fieldset dir="rtl" id="f3"><main></main><br><strong style="color: #fff;">بدا التشغيل وعادة الغابه للحياه مره اخرى</strong></fieldset>
+        </div>
+        <button onclick="f5()">التالي</button>
+    </div>
+            `
+        }
+        function f5() {
+            document.getElementById('f1').innerHTML = `
+            <div id="str">
+        <div id="f2">
+            <img style="width: 100%;" src="img/OIG3.MsaCiinBk2k7x-removebg-preview.png" alt="">
+            <fieldset dir="rtl" id="f3"><main></main><br><strong style="color: #fff;">ماذا ؟؟</strong></fieldset>
+        </div>
+        <button onclick="f6()">التالي</button>
+        </div>
+            `
+        }
+        function f6() {
+            document.getElementById('f1').innerHTML = `
+            <div id="str">
+        <div id="f2">
+            <img style="width: 100%;" src="img/OIG3.MsaCiinBk2k7x-removebg-preview.png" alt="">
+            <fieldset dir="rtl" id="f3"><main>؟؟؟</main><br><strong style="color: #fff;">تفكر للحظة محاولًا معرفة العلاقة بين عملية Kali Linux والغابة التي يبدو أنها عادت إلى الحياة</strong></fieldset>
+        </div>
+        <button onclick="f7()">التالي</button>
+        </div>
+            `
+        }
+        function f7() {
+            document.getElementById('f1').innerHTML = `
+            <div id="str">
+        <div id="f2">
+            <img style="width: 100%;" src="img/f2.jpg" alt="">
+            <fieldset dir="rtl" id="f3"><main>؟؟؟</main><br><strong style="color: #fff;">بعد التفكير في التفسيرات المحتملة لفترة من الوقت، قررت فحص الكمبيوتر المحمول ومعرفة ما بداخله</strong></fieldset>
+        </div>
+        <button onclick="f8()">التالي</button>
+        </div>
+            `
+        }
+        function f8() {
+            document.getElementById('f1').innerHTML = `
+            <div id="str">
+        <div id="f2">
+            <img style="width: 100%;" src="img/f2.jpg" alt="">
+            <fieldset dir="rtl" id="f3"><main>؟؟؟</main><br><strong style="color: #fff;">بعد التفكير في التفسيرات المحتملة لفترة من الوقت، قررت فحص الكمبيوتر المحمول ومعرفة ما بداخله</strong></fieldset>
+        </div>
+        <button onclick="f9()">التالي</button>
+        </div>
+            `
+        }
+        function f9() {
+            document.getElementById('f1').innerHTML = `
+            <div id="str">
+        <div id="f2">
+            <img style="width: 100%;" src="img/f3.jpg" alt="">
+            <fieldset dir="rtl" id="f3"><main>؟؟؟</main><br><strong style="color: #fff;">تفتح شاشة الأوامر</strong></fieldset>
+        </div>
+        <button onclick="f10()">التالي</button>
+        </div>
+            `
+        }
+        function f10() {
+            document.getElementById('f1').innerHTML = `
+            <div id="str">
+        <div id="f2">
+            <img style="width: 100%;" src="img/f3.jpg" alt="">
+            <fieldset dir="rtl" id="f3"><main style="color: #fff;">؟؟؟</main><br><strong style="color: #fff;">أرني وصفًا تفصيليًا للغابة التي أحيتها.</strong></fieldset>
+        </div>
+        <button onclick="f11()">التالي</button>
+        </div>
+            `
+        }
+        function f11() {
+            document.getElementById('f1').innerHTML = `
+            <div id="str">
+        <div id="f2">
+            <img style="width: 100%;" src="img/f3.jpg" alt="">
+            <fieldset dir="rtl" id="f3"><main style="color: #fff;"></main><br><strong style="color: #fff;">بعد مده يضهر تقرير كامل يتحدث عن الغابه </strong></fieldset>
+        </div>
+        <button onclick="f12()">التالي</button>
+        </div>
+            `
+        }
+        function f12() {
+            document.getElementById('f1').innerHTML = `
+            <div id="str">
+        <div id="f2">
+            <img style="width: 100%;" src="img/f3.jpg" alt="">
+            <fieldset dir="rtl" id="f3"><main style="color: #fff;"></main><br><strong style="color: #fff;">تنتقل ببطء إلى الأسفل وتبدأ في قراءة التقرير التفصيلي</strong></fieldset>
+        </div>
+        <button onclick="f13()">التالي</button>
+        </div>
+            `
+        }
+        function f13() {
+            document.getElementById('f1').innerHTML = `
+            <div id="str">
+        <div id="f2">
+            <img style="width: 100%;" src="img/f3.jpg" alt="">
+            <fieldset dir="rtl" id="f3"><main style="color: #fff;">؟؟؟</main><br><strong style="color: #fff;">مذهل أرني وصفًا تفصيليًا لبيئة Kali Linux.</strong></fieldset>
+        </div>
+        <button onclick="f14()">التالي</button>
+        </div>
+            `
+        }
+        function f14() {
+            document.getElementById('f1').innerHTML = `
+            <div id="str">
+        <div id="f2">
+            <img style="width: 100%;" src="img/f3.jpg" alt="">
+            <fieldset dir="rtl" id="f3"><main style="color: #fff;"></main><br><strong style="color: #fff;">لم تعمل</strong></fieldset>
+        </div>
+        <button onclick="f15()">التالي</button>
+        </div>
+            `
+        }
+        function f15() {
+            document.getElementById('f1').innerHTML = `
+            <div id="str">
+        <div id="f2">
+            <img style="width: 100%;" src="img/f3.jpg" alt="">
+            <fieldset dir="rtl" id="f3"><main style="color: #fff;">؟؟؟</main><br><strong style="color: #fff;">امممم غريب...</strong></fieldset>
+        </div>
+        <button onclick="f16()">التالي</button>
+        </div>
+            `
+        }
+        </script>
+</body>
+</html>

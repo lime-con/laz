@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pakg/script/style/style.css">
+    <title></title>
+    <style>
+        body{
+            position: absolute;
+            padding: 0;
+            margin: 0;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+        }
+        strong{
+            position: relative;
+            font-size: 25px;
+        }
+        #f1{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: url(pakg/img/laz/2.jpg);
+            background-position: 50%;
+            background-size:  100% 100%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+        #f2{
+            position: relative;
+            display: flex;
+        }
+        button{
+            font-size: 20px;
+        }
+        #list_start{
+            position: relative;
+            background-color: whitesmoke;
+            display: flex;
+            margin: 25px;
+            padding: 10px;
+            flex-direction: column;
+            align-items: center;
+        }
+        p{
+            margin: 3px 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="f1">
+        <button style="margin-bottom: 5px;" onclick="plus()">بدا العب</button>
+        <button onclick="start_list()">قرأة وصف العبه</button>
+</div>
+    <script>
+        function cls(){
+            document.getElementById('f1').innerHTML = `
+            <button style="margin-bottom: 5px;" onclick="plus()">بدا العب</button>
+            <button onclick="start_list()">قرأة وصف العبه</button>
+            `
+        }
+        function start_list(){
+            document.getElementById('f1').innerHTML = `
+            <div id="list_start">
+            <h3 style="text-align: center;">قصة اللعبه</h3>
+            <p> تدو القصه حول لاز في منزله المليء بالماء</p>
+            <p>حدث هاذى عن طريق الخطا بسبب الضغط العالي</p>
+            <p>للماء</p>
+            <button onclick="cls()">اغلاق</button>
+            </div>
+            `
+        }
+        function plus(){
+            location.href = 'pakg'
+        }    
+        let text_1_value = document.getElementsByName('text_1')[0].value;
+    </script>
+</body>
+</html>

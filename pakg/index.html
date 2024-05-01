@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="script/style/style.css">
+    <style>
+        #body{
+            padding: 0;
+            margin: 0;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+        }
+        strong{
+            position: relative;
+            font-size: 25px;
+        }
+        #f1{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: url(rooms/OIG1.jpg);
+            background-position: 50%;
+            background-size:  100% 100%;
+        }
+        #f2{
+            position: relative;
+        }
+        #f3{
+            position: relative;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body id="body">
+    <div id="f1">
+        <div id="f2">
+            <laz id="laz"></laz>
+            <img style="width: 100%;" src="img/OIG3.MsaCiinBk2k7x-removebg-preview.png" alt="">
+            <fieldset dir="rtl" id="f3"><main>???</main><br><strong>مرحبا~</strong></fieldset>
+        </div>
+        <button onclick="f1()">التالي</button>
+    </div>
+    <script>
+        function f1(){
+            document.getElementById('f1').innerHTML = `
+            <div id="f2">
+            <img style="width: 100%;" src="img/laz/1.png" alt="">
+            <fieldset dir="rtl" id="f3"><main>لاز</main><br><strong>أوه مرحبا</strong></fieldset>
+        </div>
+        <button onclick="f2()">التالي</button>
+            `
+        }
+        function f2(){
+            document.getElementById('f1').innerHTML = `
+            <div id="f2">
+            <img style="width: 100%;" src="img/OIG3.MsaCiinBk2k7x-removebg-preview.png" alt="">
+            <fieldset dir="rtl" id="f3"><main>???</main><br><strong>لماذا يوجد فجأة كل هذا الماء هنا؟</strong></fieldset>
+        </div>
+        <button onclick="f3()">التالي</button>
+            `
+        }
+        function f3(){
+            document.getElementById('f1').innerHTML = `
+            <div id="f2">
+            <img style="width: 100%;" src="img/laz/1.png" alt="">
+            <fieldset dir="rtl" id="f3"><main>لاز</main><br><strong>لا شيء مهم حقًا، مجرد خطأ ارتكبته</strong></fieldset>
+        </div>
+        <button onclick="f4()">التالي</button>
+            `
+        }
+        function f4(){
+            document.getElementById('f1').innerHTML = `
+            <div id="f2">
+            <img style="width: 100%;" src="img/laz/1.png" alt="">
+            <fieldset dir="rtl" id="f3"><main>لاز</main><br><strong>لا شيء مهم حقًا، مجرد خطأ ارتكبته</strong></fieldset>
+        </div>
+        <button onclick="f6()">التالي</button>
+            `
+        }
+        function f6(){
+            document.getElementById('f1').innerHTML = `
+            <div id="f2">
+            <img style="width: 100%;" src="img/OIG3.MsaCiinBk2k7x-removebg-preview.png" alt="">
+            <fieldset dir="rtl" id="f3"><main>???</main><br><strong>ولكن كيف تسببت في ذلك؟</strong></fieldset>
+        </div>
+        <button onclick="f7()">التالي</button>
+        `
+        }
+        function f7(){
+            document.getElementById('f1').innerHTML = `
+            <button style="margin-bottom: 5px;" onclick="f7_1()">اخبرها بالسبب</button>
+            <button onclick="f7_0()">لماذا انتي هنا</button>
+            `
+        }
+        function f7_0() {
+            document.getElementById('f1').innerHTML = `
+            <div id="f2">
+            <img style="width: 100%;" src="img/OIG3.MsaCiinBk2k7x-removebg-preview.png" alt="">
+            <fieldset dir="rtl" id="f3"><main>???</main><br><strong>لقد كنت مارًا للتو ولاحظت وجود الماء، لذلك كنت أشعر بالفضول حول سبب ذلك.</strong></fieldset>
+            </div>
+            <button onclick="f6()">التالي</button>
+            `
+        }
+        function f7_1() {
+            document.getElementById('f1').innerHTML = `
+            <div id="f2">
+            <img style="width: 100%;" src="img/laz/3.png" alt="">
+            <fieldset dir="rtl" id="f3"><main>لاز</main><br><strong>حسنا ساخبركي طالما الامر يهمك</strong></fieldset>
+            </div>
+            <button onclick="f7_2()">التالي</button>
+            `
+        }
+        function f7_2(){
+        document.getElementById('f1').innerHTML = `
+        <div id="f2">
+        <img style="width: 100%;" src="img/laz/3.png" alt="">
+        <fieldset dir="rtl" id="f3"><main>لاز</main><br><strong>هل تعرفين عندما يكون الماء ضعيف في بعض الاحيان</strong></fieldset>
+        </div>
+        <button onclick="f7_3()">التالي</button>
+        `
+        }
+        function f7_3(){
+        document.getElementById('f1').innerHTML = `
+        <div id="f2">
+            <img style="width: 100%;" src="img/OIG3.MsaCiinBk2k7x-removebg-preview.png" alt="">
+            <fieldset dir="rtl" id="f3"><main>???</main><br><strong>نعم، أفهم ذلك...</strong></fieldset>
+        </div>
+        <button onclick="f7_4()">التالي</button>
+        `
+        }
+        function f7_4(){
+        document.getElementById('body').innerHTML = `
+        <div id="f1" style="background: url(top/2.jpg);background-size:  100% 100%;">
+        <div id="f2">
+            <img style="width: 100%;" src="img/laz/4.png" alt="">
+            <fieldset dir="rtl" id="f3"><main>لاز</main><br><strong>في ذلك اليوم قررت الصعود للسطح و رفع ضغط المياه</strong></fieldset>
+        </div>
+        <button onclick="f7_5()">التالي</button>
+        </div>
+        `
+        }
+        function f7_5(){
+        document.getElementById('body').innerHTML = `
+        <div id="f1" style="background: url(rooms/الحمام/img_1.jpg);background-size:  100% 100%;">
+        <div id="f2">
+            <img style="width: 100%;" src="img/laz/4.png" alt="">
+            <fieldset dir="rtl" id="f3"><main>لاز</main><br><strong>ثم عدت وفتحت الصنبور وعندما انتهيت  من ألاستحمام اغلقته ولاكن</strong></fieldset>
+        </div>
+        <button onclick="f7_6()">التالي</button>
+        </div>
+        `
+        }
+        function f7_6(){
+        document.getElementById('f1').innerHTML = `
+        <div id="f1" style="background: url(rooms/الحمام/img_1.jpg);background-size:  100% 100%;">
+        <div id="f2">
+            <img style="width: 100%;" src="img/laz/4.png" alt="">
+            <fieldset dir="rtl" id="f3"><main>لاز</main><br><strong>مازل الصنبور يستمر بالتقطير ثم اغلقته بقوه اكبر</strong></fieldset>
+        </div>
+        <button onclick="f7_7()">التالي</button>
+        </div>
+        `
+        }
+        function f7_7(){
+        document.getElementById('body').innerHTML = `
+        <div id="f1">
+        <div id="f2">
+            <img style="width: 100%;" src="img/laz/1.png" alt="">
+            <fieldset dir="rtl" id="f3"><main>لاز</main><br><strong>ثم توقف لا كن بعد فتره بدات الموصير بالتكسر وهاذى ماحصل</strong></fieldset>
+        </div>
+        <button onclick="f7_8()">التالي</button>
+        </div>
+        `
+        }
+        function f7_8(){
+        document.getElementById('body').innerHTML = `
+            <div id="f1">
+            <div id="f2">
+            <img style="width: 100%;" src="img/OIG3.MsaCiinBk2k7x-removebg-preview.png" alt="">
+            <fieldset dir="rtl" id="f3"><main>???</main><br><strong>كما أرى..</strong><br><strong>إذن أنت تسببت في هذه الحادثة إذن؟</strong></fieldset>
+            </div>
+            <button onclick="f7_9()">التالي</button>
+            </div>
+        `
+        }
+        function f7_9(){
+            document.getElementById('body').innerHTML = `
+        <div id="f1">
+            <div id="f2">
+            <img style="width: 100%;" src="img/laz/1.png" alt="">
+            <fieldset dir="rtl" id="f3"><main>لاز</main><br><strong>تماما</strong></fieldset>
+            </div>
+            <button onclick="f7_10()">التالي</button>
+        </div>
+            `
+        }
+        function f7_10(){
+            document.getElementById('body').innerHTML = `
+            <div id="f1">
+        <div id="f2">
+            <img style="width: 100%;" src="img/OIG3.MsaCiinBk2k7x-removebg-preview.png" alt="">
+            <fieldset dir="rtl" id="f3"><main>???</main><br><strong>لا أقصد أن أكون وقحة، لكن ألا ينبغي عليك إخبار شخص ما بما حدث وحثه على مساعدتك؟</strong></fieldset>
+        </div>
+        <button onclick="f7_11()">التالي</button>
+    </div>   
+    `
+        }
+        function f7_11(){
+            document.getElementById('body').innerHTML = `
+        <div id="f1">
+            <div id="f2">
+            <img style="width: 100%;" src="img/laz/1.png" alt="">
+            <fieldset dir="rtl" id="f3"><main>لاز</main><br><strong>استرخي كل شيء تحت السيطرة سعتاد على الوضع</strong></fieldset>
+            </div>
+            <button onclick="f7_12()">التالي</button>
+        </div>
+            `
+        }
+        function f7_12(){
+            document.getElementById('body').innerHTML = `
+            <div id="f1">
+        <div id="f2">
+            <img style="width: 100%;" src="img/OIG3.MsaCiinBk2k7x-removebg-preview.png" alt="">
+            <fieldset dir="rtl" id="f3"><main>???</main><br><strong>هل أنت متأكد من أنه يمكنك تنظيف كل هذا بنفسك؟</strong></fieldset>
+        </div>
+        <button onclick="f7_13()">التالي</button>
+    </div>   
+    `
+        }
+        function f7_13(){
+            document.getElementById('body').innerHTML = `
+        <div id="f1">
+            <div id="f2">
+            <img style="width: 100%;" src="img/OIG3.MsaCiinBk2k7x-removebg-preview.png" alt="">
+            <fieldset dir="rtl" id="f3"><main>???</main><br><strong>كيف يمكنك أن تكون هادئًا جدًا بشأن شيء كهذا، إنه... غير طبيعي...</strong></fieldset>
+        </div>
+            <button onclick="f7_14()">التالي</button>
+        </div>
+            `
+        }
+        function f7_14(){
+            document.getElementById('body').innerHTML = `
+        <div id="f1">
+            <div id="f2">
+            <img style="width: 100%;" src="img/laz/1.png" alt="">
+            <fieldset dir="rtl" id="f3"><main>لاز</main><br><strong>لا تهتمي للامر</strong></fieldset>
+            </div>
+            <button onclick="f7_15()">التالي</button>
+        </div>
+            `
+        }
+        // function f7_15(){
+        //     document.getElementById('body').innerHTML = `
+        // <div id="f1">
+        //     <div id="f2">
+        //     <img style="width: 100%;" src="img/OIG3.MsaCiinBk2k7x-removebg-preview.png" alt="">
+        //     <fieldset dir="rtl" id="f3"><main>???</main><br><strong>أي نوع من المفاجأت؟</strong></fieldset>
+        // </div>
+        //     <button onclick="f7_16()">التالي</button>
+        // </div>
+        //     `
+        // }
+        // function f7_16(){
+        //     document.getElementById('body').innerHTML = `
+        // <div id="f1">
+        //     <div id="f2">
+        //     <img style="width: 100%;" src="img/laz/1.png" alt="">
+        //     <fieldset dir="rtl" id="f3"><main>لاز</main><br><strong>ستعرفين عندما آتي</strong></fieldset>
+        //     </div>
+        //     <button onclick="f7_17()">التالي</button>
+        // </div>
+        //     `
+        // }
+        // function f7_17(){
+        //     document.getElementById('body').innerHTML = `
+        // <div id="f1">
+        //     <div id="f2">
+        //     <img style="width: 100%;" src="img/OIG3.MsaCiinBk2k7x-removebg-preview.png" alt="">
+        //     <fieldset dir="rtl" id="f3"><main>???</main><br><strong>إلى متى ستغيب؟</strong></fieldset>
+        // </div>
+        //     <button onclick="f7_18()">التالي</button>
+        // </div>
+        //     `
+        // }
+        // function f7_18(){
+        //     document.getElementById('body').innerHTML = `
+        //     <div id="f1">
+        // <div id="box">
+                        
+        // </div>
+        // <div id="f2">
+        // <img style="width: 100%;" src="img/laz/1.png" alt="">
+        // <fieldset dir="rtl" id="f3"><main>لاز</main><br><strong>لاعليك ربما لساعه لا اعلم حقا</strong></fieldset>
+        // </div>
+        // <button onclick="f7_19()">التالي</button>
+        // </div>
+        //     `
+        // }
+        // function f7_19(){
+        //     document.getElementById('body').innerHTML = `
+        // <div id="f1">
+        //     <div id="f2">
+        //     <img style="width: 100%;" src="img/OIG3.MsaCiinBk2k7x-removebg-preview.png" alt="">
+        //     <fieldset dir="rtl" id="f3"><main>???</main><br><strong>حسنًا إذن، أعتقد أنني سأبقى في المنزل، ليس لدي أي مكان آخر أكون فيه على أي حال</strong></fieldset>
+        // </div>
+        //     <button onclick="f7_20()">التالي</button>
+        // </div>
+        //     `
+        // }
+        // function f7_20(){
+        //     document.getElementById('body').innerHTML = `
+        //     <div id="f1">
+        // <div id="box">
+                        
+        // </div>
+        // <div id="f2">
+        // <img style="width: 100%;" src="img/OIG3.MsaCiinBk2k7x-removebg-preview.png" alt="">
+        // <fieldset dir="rtl" id="f3"><strong>تتجول في أرجاء المنزل قليلاً من الملل، وتتجول هنا وهناك في انتظار عودتك</strong></fieldset>
+        // </div>
+        // <button onclick="location.href = 'ch2.html'">التالي</button>
+        // </div>
+        //     `
+        // }
+</script>
+</body>
+</html>
