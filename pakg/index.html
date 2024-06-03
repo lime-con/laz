@@ -40,7 +40,7 @@
         <div id="f2">
             <laz id="laz"></laz>
             <img style="width: 100%;" src="img/OIG3.MsaCiinBk2k7x-removebg-preview.png" alt="">
-            <fieldset dir="rtl" id="f3"><main>???</main><br><strong>مرحبا~</strong></fieldset>
+            <fieldset dir="rtl" id="f3"><main>???</main><br><strong>م-مرحبًا</strong></fieldset>
         </div>
         <button onclick="f1()">التالي</button>
     </div>
@@ -58,7 +58,7 @@
             document.getElementById('f1').innerHTML = `
             <div id="f2">
             <img style="width: 100%;" src="img/OIG3.MsaCiinBk2k7x-removebg-preview.png" alt="">
-            <fieldset dir="rtl" id="f3"><main>???</main><br><strong>لماذا يوجد فجأة كل هذا الماء هنا؟</strong></fieldset>
+            <fieldset dir="rtl" id="f3"><main>???</main><br><strong>كيف دخل الماء إلى هنا أصلا؟</strong></fieldset>
         </div>
         <button onclick="f3()">التالي</button>
             `
@@ -75,17 +75,17 @@
         function f4(){
             document.getElementById('f1').innerHTML = `
             <div id="f2">
-            <img style="width: 100%;" src="img/laz/1.png" alt="">
-            <fieldset dir="rtl" id="f3"><main>لاز</main><br><strong>لا شيء مهم حقًا، مجرد خطأ ارتكبته</strong></fieldset>
+            <img style="width: 100%;" src="img/OIG3.MsaCiinBk2k7x-removebg-preview.png" alt="">
+            <fieldset dir="rtl" id="f3"><main>???</main><br><strong>هل يمكنك تحديد ما تعنيه بـ "خطأ"؟"</strong></fieldset>
         </div>
-        <button onclick="f6()">التالي</button>
+        <button onclick="f7()">التالي</button>
             `
         }
         function f6(){
             document.getElementById('f1').innerHTML = `
             <div id="f2">
             <img style="width: 100%;" src="img/OIG3.MsaCiinBk2k7x-removebg-preview.png" alt="">
-            <fieldset dir="rtl" id="f3"><main>???</main><br><strong>ولكن كيف تسببت في ذلك؟</strong></fieldset>
+            <fieldset dir="rtl" id="f3"><main>???</main><br><strong>ولكن ماذا عنك؟ <br> كيف وصلت كل هذه المياه إلى هنا؟</strong></fieldset>
         </div>
         <button onclick="f7()">التالي</button>
         `
@@ -93,14 +93,14 @@
         function f7(){
             document.getElementById('f1').innerHTML = `
             <button style="margin-bottom: 5px;" onclick="f7_1()">اخبرها بالسبب</button>
-            <button onclick="f7_0()">لماذا انتي هنا</button>
+            <button onclick="f7_1()">لماذا انتي هنا</button>
             `
         }
         function f7_0() {
             document.getElementById('f1').innerHTML = `
             <div id="f2">
             <img style="width: 100%;" src="img/OIG3.MsaCiinBk2k7x-removebg-preview.png" alt="">
-            <fieldset dir="rtl" id="f3"><main>???</main><br><strong>لقد كنت مارًا للتو ولاحظت وجود الماء، لذلك كنت أشعر بالفضول حول سبب ذلك.</strong></fieldset>
+            <fieldset dir="rtl" id="f3"><main>???</main><br><strong>حسنًا، لأكون صادقًه، ليس لدي أي فكرة عن سبب وجودي هنا</strong></fieldset>
             </div>
             <button onclick="f6()">التالي</button>
             `
@@ -127,7 +127,7 @@
         document.getElementById('f1').innerHTML = `
         <div id="f2">
             <img style="width: 100%;" src="img/OIG3.MsaCiinBk2k7x-removebg-preview.png" alt="">
-            <fieldset dir="rtl" id="f3"><main>???</main><br><strong>نعم، أفهم ذلك...</strong></fieldset>
+            <fieldset dir="rtl" id="f3"><main>???</main><br><strong>نعم، استمر؟</strong></fieldset>
         </div>
         <button onclick="f7_4()">التالي</button>
         `
@@ -167,9 +167,9 @@
         }
         function f7_7(){
         document.getElementById('body').innerHTML = `
-        <div id="f1">
+        <div id="f1" style="background: url(rooms/leder/img_1.jpg);background-size:  100% 100%;">
         <div id="f2">
-            <img style="width: 100%;" src="img/laz/1.png" alt="">
+            <img style="width: 100%;" src="img/laz/1.png" alt="background: url(rooms/OIG1.jpg)">
             <fieldset dir="rtl" id="f3"><main>لاز</main><br><strong>ثم توقف لا كن بعد فتره بدات الموصير بالتكسر وهاذى ماحصل</strong></fieldset>
         </div>
         <button onclick="f7_8()">التالي</button>
